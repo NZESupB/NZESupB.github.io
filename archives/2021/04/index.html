@@ -7,10 +7,10 @@
 <meta name="generator" content="Hexo 5.4.0">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
-  <link rel="mask-icon" href="/images/new-logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -19,6 +19,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
@@ -289,15 +291,15 @@
     <header class="post-header">
       <div class="post-meta-container">
         <time itemprop="dateCreated"
-              datetime="2021-04-17T21:24:09+08:00"
-              content="2021-04-17">
-          04-17
+              datetime="2021-04-24T12:24:09+08:00"
+              content="2021-04-24">
+          04-24
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2021/04/17/docker/" itemprop="url">
-            <span itemprop="name">Linux常用命令</span>
+          <a class="post-title-link" href="/2021/04/24/hexo/" itemprop="url">
+            <span itemprop="name">Hexo的搭建</span>
           </a>
       </div>
 
@@ -316,8 +318,8 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2021/04/17/hexo/" itemprop="url">
-            <span itemprop="name">Nginx常用配置文件</span>
+          <a class="post-title-link" href="/2021/04/17/docker/" itemprop="url">
+            <span itemprop="name">Linux常用命令</span>
           </a>
       </div>
 
@@ -407,6 +409,26 @@
 
 
 
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
 
   
 
