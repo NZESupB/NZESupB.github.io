@@ -29,18 +29,18 @@
 <meta name="description" content="Docker,等">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux常用命令">
-<meta property="og:url" content="http://example.com/2021/04/17/docker/index.html">
+<meta property="og:url" content="http://example.com/2021/04/17/linux/index.html">
 <meta property="og:site_name" content="NXWow的博客">
 <meta property="og:description" content="Docker,等">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-17T13:24:09.000Z">
-<meta property="article:modified_time" content="2021-05-28T13:34:24.168Z">
-<meta property="article:author" content="魔域的搬运工">
+<meta property="article:modified_time" content="2021-07-18T06:24:18.347Z">
+<meta property="article:author" content="NZESupB">
 <meta property="article:tag" content="软件">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2021/04/17/docker/">
+<link rel="canonical" href="http://example.com/2021/04/17/linux/">
 
 
 <script class="page-configurations">
@@ -116,7 +116,7 @@
       <h1 class="site-title">NXWow的博客</h1>
       <i class="logo-line"></i>
     </a>
-      <p class="site-subtitle" itemprop="description">曾经是个Wiki</p>
+      <p class="site-subtitle" itemprop="description">也许会是个Wiki</p>
   </div>
 
   <div class="site-nav-right">
@@ -191,16 +191,16 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker"><span class="nav-number">1.</span> <span class="nav-text">Docker:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python"><span class="nav-number">2.</span> <span class="nav-text">Python:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Host"><span class="nav-number">3.</span> <span class="nav-text">Host:</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker"><span class="nav-number">1.</span> <span class="nav-text">Docker:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python"><span class="nav-number">2.</span> <span class="nav-text">Python:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Host"><span class="nav-number">3.</span> <span class="nav-text">Host:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#UFW"><span class="nav-number">4.</span> <span class="nav-text">UFW:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Nodejs"><span class="nav-number">5.</span> <span class="nav-text">Nodejs:</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Swap"><span class="nav-number">6.</span> <span class="nav-text">Swap:</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="魔域的搬运工"
+    <img class="site-author-image" itemprop="image" alt="NZESupB"
       src="/uploads/avatar.png">
-  <p class="site-author-name" itemprop="name">魔域的搬运工</p>
-  <div class="site-description" itemprop="description">遗留的攻略</div>
+  <p class="site-author-name" itemprop="name">NZESupB</p>
+  <div class="site-description" itemprop="description">服务器日常的记录以及远古攻略</div>
 </div>
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
@@ -285,12 +285,12 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/17/docker/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/17/linux/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/avatar.png">
-      <meta itemprop="name" content="魔域的搬运工">
-      <meta itemprop="description" content="遗留的攻略">
+      <meta itemprop="name" content="NZESupB">
+      <meta itemprop="description" content="服务器日常的记录以及远古攻略">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -316,7 +316,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-05-28 21:34:24" itemprop="dateModified" datetime="2021-05-28T21:34:24+08:00">2021-05-28</time>
+        <time title="修改时间：2021-07-18 14:24:18" itemprop="dateModified" datetime="2021-07-18T14:24:18+08:00">2021-07-18</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -344,6 +344,8 @@
 <h1 id="Docker"><a href="#Docker" class="headerlink" title="Docker:"></a>Docker:</h1><p>Docker一键安装</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https:&#x2F;&#x2F;get.docker.com | bash -s docker</span><br></pre></td></tr></table></figure>
 
+
+
 <p>docker-compose安装</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install docker-compose -y</span><br></pre></td></tr></table></figure>
 
@@ -362,18 +364,15 @@
 
 
 
-<p>pm2脚本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- https:&#x2F;&#x2F;getpm2.com&#x2F;install.sh | bash</span><br></pre></td></tr></table></figure>
-
-
-
 <p>acme证书部署</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">apt install socat</span><br><span class="line">curl https:&#x2F;&#x2F;get.acme.sh | sh </span><br><span class="line">wget https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;NZESupB&#x2F;Profile&#x2F;main&#x2F;autoacme.sh</span><br><span class="line">bash autoacme.sh</span><br></pre></td></tr></table></figure>
 
 
 
-<p>nodejs环境快速安装</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install nodejs npm -y</span><br></pre></td></tr></table></figure>
+<p>screen后台运行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#创建新窗口</span></span><br><span class="line">screen -S newScreen</span><br><span class="line"></span><br><span class="line"><span class="comment">#重现窗口</span></span><br><span class="line">screen -r newScreen</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看所有窗口</span></span><br><span class="line">screen -ls</span><br></pre></td></tr></table></figure>
+
+
 
 
 
@@ -391,6 +390,22 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;github.com.cnpmjs.org</span><br><span class="line">https:&#x2F;&#x2F;download.fastgit.org</span><br></pre></td></tr></table></figure>
 
 
+
+
+
+<h1 id="UFW"><a href="#UFW" class="headerlink" title="UFW:"></a>UFW:</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">apt update &amp;&amp; apt install ufw -y</span><br><span class="line"></span><br><span class="line"><span class="comment">#默认配置文件位于</span></span><br><span class="line">vim /etc/default/ufw</span><br><span class="line"></span><br><span class="line"><span class="comment">#启动ufw</span></span><br><span class="line">ufw <span class="built_in">enable</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#拒绝6379端口</span></span><br><span class="line">ufw deny 6739</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="Nodejs"><a href="#Nodejs" class="headerlink" title="Nodejs:"></a>Nodejs:</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">apt update &amp;&amp; apt install nodejs npm -y</span><br><span class="line">npm i -g pm2</span><br><span class="line">npm install -g n</span><br><span class="line">n模块常用命令</span><br><span class="line"><span class="comment">#(1) 安装node最新版本</span></span><br><span class="line">n latest</span><br><span class="line"></span><br><span class="line"><span class="comment">#(2) 安装稳定版</span></span><br><span class="line">n stable</span><br><span class="line"></span><br><span class="line"><span class="comment">#(3)查看可升级的版本</span></span><br><span class="line">n ls</span><br><span class="line"></span><br><span class="line"><span class="comment">#(4) 安装指定版本</span></span><br><span class="line">n v12.10.0</span><br><span class="line"></span><br><span class="line"><span class="comment">#(5) 查看已安装版本</span></span><br><span class="line">n</span><br><span class="line"></span><br><span class="line"><span class="comment">#(6) 删除指定版本</span></span><br><span class="line">n rm 10.16.0</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="Swap"><a href="#Swap" class="headerlink" title="Swap:"></a>Swap:</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#一键脚本</span></span><br><span class="line">wget https://www.moerats.com/usr/shell/swap.sh &amp;&amp; bash swap.sh</span><br></pre></td></tr></table></figure>
+
+
     </div>
 
     
@@ -406,13 +421,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/04/17/nginx/" rel="prev" title="Nginx常用配置文件">
-                  <i class="fa fa-chevron-left"></i> Nginx常用配置文件
+                <a href="/2021/02/16/YesNem/" rel="prev" title="网易云网页播放器">
+                  <i class="fa fa-chevron-left"></i> 网易云网页播放器
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/04/24/hexo/" rel="next" title="Hexo的搭建">
-                  Hexo的搭建 <i class="fa fa-chevron-right"></i>
+                <a href="/2021/04/17/nginx/" rel="next" title="Nginx常用配置文件">
+                  Nginx常用配置文件 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -460,7 +475,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">魔域的搬运工</span>
+  <span class="author" itemprop="copyrightHolder">NZESupB</span>
 </div>
 
     </div>
